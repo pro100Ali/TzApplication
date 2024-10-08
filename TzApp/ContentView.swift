@@ -8,7 +8,7 @@ struct ContentView: View {
             Text("Let's count together")
                 .font(.system(size: 20))
             
-            VStack(spacing: 60) {
+            VStack(spacing: 64) {
                 Text("\(count)")
                     .font(.system(size: 64, weight: .semibold))
                 
@@ -25,23 +25,23 @@ struct ContentView: View {
                             .frame(width: 28, height: 28)
                     }
                 }
-                
                 Button {
                     count = 0
                 } label: {
-                    ZStack {
-                        Circle()
-                            .fill(Color.darkThree)
-                            .frame(width: 52, height: 52)
-                        Image(systemName: "xmark")
-                            .resizable()
-                            .frame(width: 12, height: 12)
-                            .tint(.white)
-                    }
+                    Text("Сброс")
+                        .font(.system(size: 16))
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .background(Color.darkThree)
+                        .cornerRadius(16)
+                        .foregroundColor(.white)
                 }
             }
             .padding(.top, 100)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.backColor)
+        .ignoresSafeArea()
     }
 }
 

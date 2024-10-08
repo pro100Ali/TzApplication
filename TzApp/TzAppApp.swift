@@ -1,10 +1,3 @@
-//
-//  TzAppApp.swift
-//  TzApp
-//
-//  Created by Али Айболатов on 08.10.2024.
-//
-
 import SwiftUI
 
 @main
