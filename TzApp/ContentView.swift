@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Let's count together")
-                .font(.system(size: 20))
+                .font(.system(size: 32))
             
             VStack(spacing: 64) {
                 Text("\(count)")
@@ -25,6 +25,7 @@ struct ContentView: View {
                             .frame(width: 28, height: 28)
                     }
                 }
+                    
                 Button {
                     count = 0
                 } label: {
@@ -48,6 +49,3 @@ struct ContentView: View {
 #Preview {
     ContentView(count: 0)
 }
-    
-    //#2C8BA4
-    
